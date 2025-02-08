@@ -5,20 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Stidio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <nav>
-        <p>WebStudio</p>
-        <ul>
-          <li><a href="">Studio</a></li>
-          <li><a href="">Porfolio</a></li>
-          <li><a href="">Contacts</a></li>
+        <p class="logo"><span class="logo_first_word">Web</span>Studio</p>
+        <ul class="nav-list">
+          <li class="nav-list_item"><a href="">Porfolio</a></li>
+          <li class="nav-list_item"><a href="">Studio</a></li>
+          <li class="nav-list_item"><a href="">Contacts</a></li>
         </ul>
       </nav>
       <address>
-        <ul>
+        <ul class="contact-list">
           <li><a href="mailto: info@devstudio.com">info@devstudio.com</a></li>
           <li><a href="tell:+11 (000) 111-11-11">+11 (000) 111-11-11</a></li>
         </ul>
@@ -26,37 +40,37 @@
     </header>
     <main>
       <!--------------- HERO ---------->
-      <section>
-        <h1>Effective Solutions for Your Business</h1>
-        <button type="button">Order Service</button>
+      <section class="hero_section">
+        <h1 class="hero-tetle">Effective Solutions for Your Business</h1>
+        <button type="button" class="hero_bnt">Order Service</button>
       </section>
       <!-- BENEFITS -->
-      <section>
-        <ul>
-          <li>
-            <h3>Strategy</h3>
-            <p>
+      <section class="benefits_section">
+        <ul class="benefits_list">
+          <li class="benefits_item">
+            <h3 class="benefits_title">Strategy</h3>
+            <p class="benefits_descript">
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
-          <li>
-            <h3>Punctuality</h3>
-            <p>
+          <li class="benefits_item">
+            <h3 class="benefits_title">Punctuality</h3>
+            <p class="benefits_descript">
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
-          <li>
-            <h3>Diligence</h3>
-            <p>
+          <li class="benefits_item">
+            <h3 class="benefits_title">Diligence</h3>
+            <p class="benefits_descript">
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
-          <li>
-            <h3>Technologies</h3>
-            <p>
+          <li class="benefits_item">
+            <h3 class="benefits_title">Technologies</h3>
+            <p class="benefits_descript">
               Design practice focused on digital experiences. We bring forth a
               deep passion for problem-solving.
             </p>
@@ -64,35 +78,123 @@
         </ul>
       </section>
       <!-- OUR TEAM -->
-      <section>
-        <h2>Our Team</h2>
-        <ul>
-          <li>
-            <img src="" alt="Avatar of Mark Guerrero" />
-            <h3>Mark Guerrero</h3>
-            <p>Product Designer</p>
+      <section class="team_section">
+        <h2 class="team_title">Our Team</h2>
+        <ul class="team_list">
+          <li class="team_item">
+            <img
+              src="/imges/Mark Guerrero.jpg"
+              alt="Avatar of Mark Guerrero"
+              width="264"
+              height="260"
+            />
+            <h3 class="worker">Mark Guerrero</h3>
+            <p class="worker_position">Product Designer</p>
           </li>
-          <li>
-            <img src="" alt="Avatar of Tom Ford" />
-            <h3>Tom Ford</h3>
-            <p>Frontend Developer</p>
+          <li class="team_item">
+            <img
+              src="/imges/Tom Ford.jpg"
+              alt="Avatar of Tom Ford"
+              width="264"
+              height="260"
+            />
+            <h3 class="worker">Tom Ford</h3>
+            <p class="worker_position">Frontend Developer</p>
           </li>
-          <li>
-            <img src="" alt="Avatar of Camila Garcia" />
-            <h3>Camila Garcia</h3>
-            <p>Marketing</p>
+          <li class="team_item">
+            <img
+              src="/imges/Camila Garcia.jpg"
+              alt="Avatar of Camila Garcia"
+              width="264"
+              height="260"
+            />
+            <h3 class="worker">Camila Garcia</h3>
+            <p class="worker_position">Marketing</p>
           </li>
-          <li>
-            <img src="" alt="Avatar of Daniel Wilson" />
-            <h3>Daniel Wilson</h3>
-            <p>UI Designer</p>
+          <li class="team_item">
+            <img
+              src="/imges/Daniel Wilson.jpg"
+              alt="Avatar of Daniel Wilson"
+              width="264"
+              height="260"
+            />
+            <h3 class="worker">Daniel Wilson</h3>
+            <p class="worker_position">UI Designer</p>
+          </li>
+        </ul>
+      </section>
+      <!------------ Portfolio  ------------>
+      <section class="portfolio_section">
+        <h3 class="portfolio_title">Our Portfolio</h3>
+        <ul class="portfolio_list">
+          <li class="work_card">
+            <img
+              src="/imges/Banking App.jpg"
+              alt="Banking App Card"
+              width="360"
+              height="300"
+            />
+            <h3 class="work_title">Banking App</h3>
+            <p class="work_type">App</p>
+          </li>
+          <li class="work_card">
+            <img
+              src="/imges/Cashless Payment.jpg"
+              alt="Cashless Payment Card"
+              width="360"
+              height="300"
+            />
+            <h3 class="work_title">Cashless Payment</h3>
+            <p class="work_type">Marketing</p>
+          </li>
+          <li class="work_card">
+            <img
+              src="/imges/Meditaion App.jpg"
+              alt="Meditaion App Card"
+              width="360"
+              height="300"
+            />
+            <h3 class="work_title">Meditation App</h3>
+            <p class="work_type">App</p>
+          </li>
+          <li class="work_card">
+            <img
+              src="/imges/Taxi Service.jpg"
+              alt="Taxi Service Card"
+              width="360"
+              height="300"
+            />
+            <h3 class="work_title">Taxi Service</h3>
+            <p class="work_type">Marketing</p>
+          </li>
+          <li class="portfolio_item">
+            <img
+              src="/imges/Screen Illustrations.jpg"
+              alt="Screen Illustrations"
+              width="360"
+              height="300"
+            />
+            <h3 class="work_title">Screen Illustrations</h3>
+            <p class="work_type">Design</p>
+          </li>
+          <li class="portfolio_item">
+            <img
+              src="/imges/Online Courses.jpg"
+              alt="Online Courses Card"
+              width="360"
+              height="300"
+            />
+            <h3 class="work_title">Online Courses</h3>
+            <p class="work_type">Marketing</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <p>WebStudio</p>
-      <p>
+    <footer class="main_footer">
+      <p class="logo footer_logo">
+        <span class="logo_first_word">Web</span>Studio
+      </p>
+      <p class="main_footer_motto">
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
       </p>
